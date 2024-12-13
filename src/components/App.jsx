@@ -1,28 +1,23 @@
 import React from 'react'
+import '../styles/global.scss'
 import Navbar from './Navbar/Navbar'
 import Advert from './Advert/advert'
-import Sectionlove from './sectionlove/sectionlove'
-import Products from './products/products'
+import { useState } from 'react'
+
+import Productslist from './Productslist/Productslist'
+import Footer from './Footer/Footer'
 
 const App = () => {
+  const [searchdata, updatesearchdata] = useState('')
   return (
     <>
-      <div className="row">
-        <div className="col-12">
-          <Navbar />
-        </div>
-        <div className="col-12">
-          <Advert />
-        </div>
-        <div className="col-12">
-          <Sectionlove />
-        </div>
-        <div className="col-12">
-          <div className="row">
-            <Products />
-          </div>
-        </div>
-      </div>
+      <Navbar updatesearchdata={updatesearchdata} />
+
+      <Advert />
+
+      <Productslist  searchdata={searchdata}/>
+
+      <Footer />
     </>
   )
 }

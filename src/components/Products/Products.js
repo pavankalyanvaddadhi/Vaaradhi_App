@@ -29,24 +29,22 @@ const Products = () => {
 
   return (
     <>
-      <div className="row">
-        {productslist.map(copyofproductslist => {
-          const {name, cost, img} = copyofproductslist
+      <div className="container">
+        <div className="row">
+          {productslist.map(copyofproductslist => {
+            const {name, cost, img} = copyofproductslist
 
-          return (
-            <>
-              <div className="col-3">
-                <img
-                  className="img"
-                  src={img}
-                  style={{height: '266.6px', width: '266.6px'}}
-                />
-                <h4>{name}</h4>
-                <h4>{cost}</h4>
-              </div>
-            </>
-          )
-        })}
+            return (
+              <>
+                <div className="col-3">
+                  <img src={img} />
+                  <h4>{name}</h4>
+                  <h4>{cost}</h4>
+                </div>
+              </>
+            )
+          })}
+        </div>
       </div>
     </>
   )

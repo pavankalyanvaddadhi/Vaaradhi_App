@@ -38,6 +38,30 @@ const Productslist = ({searchdata}) => {
       cost: '475.00',
       img: 'https://vaaradhifarms.com/cdn/shop/files/deepixelstudios_wild_turmeric_powder_in_a_pouch_1080x1080_a5f1c16c-5f91-4fc1-b586-b6b292eb5c21.png?v=1714064248&width=600',
     },
+    {
+        name: 'Allam Pickle',
+  
+        cost: '925.00',
+        img: 'https://vaaradhifarms.com/cdn/shop/files/Allampickle1.png?v=1730175392&width=400',
+      },
+      {
+        name: ' Gongura Pickle',
+  
+        cost: '475.00',
+        img: 'https://vaaradhifarms.com/cdn/shop/files/ecommified_dark_red_pickle_paste_soaking_in_oil_in_a_white_bowl_eef36501-a599-44f3-88c4-743bedafae43.webp?v=1717776675&width=400',
+      },
+      {
+        name: 'Kariveypaku Pickle',
+  
+        cost: '575.00',
+        img: 'https://vaaradhifarms.com/cdn/shop/files/ecommified_black_pickle_paste_soaking_in_oil_in_a_white_bowl_fr_ef09eb14-ea5c-400d-bceb-29779d7b725e.webp?v=1717780032&width=400',
+      },
+      {
+        name: 'Lemon Pickle',
+  
+        cost: '1249.00',
+        img: 'https://vaaradhifarms.com/cdn/shop/files/ecommified_red_lime_pickle_paste_in_a_white_bowl_table_backgrou_4f4a3c66-7924-44b2-8a54-f244a09c2cd3.webp?v=1717780772&width=400',
+      },
   ]
 
   
@@ -84,11 +108,12 @@ const Productslist = ({searchdata}) => {
                       width: '300px',
                       height: '300px',
                       borderRadius: '5px',
+                      marginTop:"20px"
                     }}
                   />
 
                   <h4 style={{fontWeight: '800px'}}>{name} </h4>
-                  <h4>{cost}</h4>
+                  <h5>From Rs.{cost}</h5>
                 </div>
               </>
             )

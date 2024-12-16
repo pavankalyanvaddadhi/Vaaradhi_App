@@ -6,6 +6,7 @@ import {useState} from 'react'
 
 import Productslist from './Productslist/Productslist'
 import Footer from './Footer/Footer'
+import Login from './Login/Login'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
       <Productslist searchdata={searchdata} />
 
       <Footer />
+      <Login/>
     </>
   )
 }
